@@ -125,6 +125,7 @@ p{
 .about-pages{
   width: 50%;
   margin:auto!important;
+  color: white;
 }
 
 .about-pages div{
@@ -156,6 +157,7 @@ p{
 footer{
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: bisque;
