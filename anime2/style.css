@@ -69,9 +69,15 @@ nav {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transform: translate(100%);
+	transform: translateY(100%);
 }
 
+.hide {
+	background: black;
+	overflow: hidden;
+}
+
+.hide span {
+	transform: translateY(100%);
+	display: inline-block;
+}
