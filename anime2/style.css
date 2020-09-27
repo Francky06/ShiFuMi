@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lobster";
+}
+
+.landing {
+	min-height: 100vh;
+	background: url('woman.jpg');
+	background-size: cover;
+	padding:0rem 5rem;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 10vh;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+}
+
+.nav-links li {
+	padding-left: 10rem;
+	font-size: 1.2rem;
+}
+
+#logo {
+	font-weight: lighter;
+	font-size: 2rem;
+}
+
+.big-text {
+	position: absolute;
+	top:30%;
+	left: 30%;
+	transform: translate(-30%,-30%);
+	font-size: 5rem;
+
+}
+
+.intro {
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-text {
+	font-size:3rem;
+}
+
+.slider {
+	background: #d13248;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(100%);
+}
+
