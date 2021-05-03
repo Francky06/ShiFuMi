@@ -1,0 +1,22 @@
+@mixin absolute-el($top, $right, $bottom, $left, $x, $y, $fond) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  background: $fond;
+  transform: translate($x, $y);
+
+  @if $fond != salmon {
+    border-radius: 10px;
+  }
+}
+
+@mixin background($couleur, $text) {
+  background: $couleur;
+  color: $text;
+}
+
+@mixin prop($propriete, $couleur) {
+  #{$propriete}: $couleur;
+}

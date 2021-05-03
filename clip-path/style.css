@@ -4,18 +4,34 @@
     list-style: none;
 }
 
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 article {
     position: fixed;
     top:0;
     left:0;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background-attachment: fixed;
     background: url(images/circle.jpg);
     clip-path: circle(100px at center);
 }
 
+#article {
+    position: fixed;
+    top:0;
+    left:50%;
+    width: 50%;
+    height: 100vh;
+    background-attachment: fixed;
+    background: url(images/circle.jpg);
+    clip-path: circle(100px at center);
+
+}
 .container {
     position: absolute;
     margin-top: 200vh;

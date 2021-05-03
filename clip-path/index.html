@@ -11,7 +11,10 @@
 
 <main>
     <h1 class="title">Scroll to See Magic...</h1>
+    <div class="test">
     <article></article>
+    <article id="article"></article>
+    </div>
     <div class="container">
         <h2>Welcome Friends ! :)</h2><br><br>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio deleniti doloribus soluta,
@@ -84,6 +87,12 @@
     window.addEventListener('scroll', function(){
         var value = window.scrollY;
         section.style.clipPath = "circle("+ value +"px at center)";
+
+    });
+        var section1 = document.querySelector('#article');
+    	window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+        section1.style.clipPath = "circle("+ value +"px at center)";
 
     });
 
