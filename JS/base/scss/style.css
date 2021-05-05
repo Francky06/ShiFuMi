@@ -1,4 +1,4 @@
-.container, .box {
+.container, .content, .box, .popup-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +25,11 @@ body {
 .container {
   background: #3232da;
   color: #fff;
+}
+
+.content {
+  max-width: 100%;
+  margin-top: 15rem;
 }
 
 h1 {
@@ -65,6 +70,14 @@ h1 {
           transform: rotate(180deg);
 }
 
+.bouton {
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -102,5 +115,107 @@ nav ul li {
 nav a {
   color: #fff;
   text-decoration: none;
+}
+
+#toast {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.notification {
+  background-color: orange;
+  border-radius: 5px;
+  color: #fff;
+  padding: 2rem;
+  margin: 3px;
+}
+
+#open,
+#close,
+#rain,
+#rain2 {
+  margin-top: 2rem;
+  background: brown;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.popup-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 500px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.popup button {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+}
+
+.rain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+}
+
+.heart {
+  position: fixed;
+  top: -2vh;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: fall 3s linear;
+          animation: fall 3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inactive {
+  display: none;
+}
+
+@-webkit-keyframes fall {
+  to {
+    -webkit-transform: translateY(105vh);
+            transform: translateY(105vh);
+  }
+}
+
+@keyframes fall {
+  to {
+    -webkit-transform: translateY(105vh);
+            transform: translateY(105vh);
+  }
 }
 /*# sourceMappingURL=style.css.map */
